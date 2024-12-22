@@ -1,6 +1,3 @@
 streamlit
 pandas
-requests
-rdkit==2023.09.1
-numpy
-pillow
+rdkit
