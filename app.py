@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import requests
-from rdkit import Chem
+from rdkit-pypi==2023.9.1 import Chem
 from rdkit.Chem import Draw
 import io
 
