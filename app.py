@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 from rdkit import Chem
-from rdkit.Chem import Draw
+#from rdkit.Chem import Draw
 
 # Título de la aplicación
 st.title("Visualización de Moléculas en 2D")
