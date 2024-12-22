@@ -8,7 +8,7 @@ from rdkit.Chem import Draw
 st.title("Visualización de Moléculas en 2D")
 
 # URL del archivo
-github_url = "https://raw.githubusercontent.com/mdgenriquez/punonpdb/main/MDG202_cl2.csv"
+github_url = "github_url = "https://raw.githubusercontent.com/mdgenriquez/punonpdb/main/MDG202_cl2.csv"
 
 try:
     response = requests.get(github_url)
