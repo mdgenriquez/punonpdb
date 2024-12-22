@@ -1,5 +1,6 @@
-python<3.11
-rdkit==2023.09.1
 streamlit
+pandas
+requests
+rdkit==2023.09.1
 numpy
 pillow
