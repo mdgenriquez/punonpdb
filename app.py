@@ -1,5 +1,11 @@
 import streamlit as st
 import pandas as pd
+import io
+
+# Usar io.StringIO en lugar de pandas.compat.StringIO
+data = io.StringIO("col1,col2\n1,2\n3,4")
+df = pd.read_csv(data)
+print(df)
 import requests
 from rdkit import Chem
 #from rdkit.Chem import Draw
