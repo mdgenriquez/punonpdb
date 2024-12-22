@@ -1,3 +1,4 @@
-python<3.11
-rdkit
 streamlit
+rdkit==2023.09.1
+numpy
+pillow
