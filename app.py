@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import requests
-from rdkit-pypi==2023.9.1 import Chem
+from rdkit import Chem
 from rdkit.Chem import Draw
 import io
 
@@ -37,4 +37,5 @@ try:
                 st.warning(f"No se pudo procesar el SMILES: {smiles}")
 except Exception as e:
     st.error(f"Error al descargar o procesar el archivo: {e}")
+
 
