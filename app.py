@@ -9,7 +9,7 @@ st.title("Visualización de Moléculas en 2D")
 st.markdown("Visualiza moléculas desde el archivo `https://github.com/mdgenriquez/punonpdb/blob/main/MDG202_cl2.csv` en tu repositorio de GitHub.")
 
 # URL del archivo en GitHub (MDG202_cl2.csv)
-github_url = "MDG202_cl2.csv"
+github_url = "https://github.com/mdgenriquez/punonpdb/blob/d0170a564fdafa0a1be7589fc6c922f67bf5101b/MDG202_cl2.csv"
 
 # Descargar el archivo
 try:
