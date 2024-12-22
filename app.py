@@ -8,7 +8,7 @@ from rdkit import Chem
 st.title("Visualización de Moléculas en 2D")
 st.markdown("Visualiza moléculas desde el archivo `MDG202_cl2.csv` en tu repositorio de GitHub.")
 
-# URL del archivo en GitHub (https://github.com/mdgenriquez/punonpdb/blob/main/MDG202_cl2.csv)
+# URL del archivo en GitHub (MDG202_cl2.csv)
 github_url = "https://raw.githubusercontent.com/tu_usuario/tu_repositorio/main/MDG202_cl2.csv"
 
 # Descargar el archivo
