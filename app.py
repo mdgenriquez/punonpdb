@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import requests
+import io
 
 # Título de la aplicación
 st.title("Visualización de Moléculas en 2D con MolView")
@@ -25,6 +26,7 @@ try:
         st.subheader("Visualización de Moléculas en 2D")
         for index, row in df.iterrows():
             smiles = row['SMILES']
+            # Crear la URL de MolView con el formato SMILES
             molview_url = f"https://molview.org/?lang=es#mode=ballAndStick&url=smiles:{smiles}"
             st.markdown(f"### Molécula {index + 1}: {smiles}")
             st.markdown(f"Visualización en MolView: [Abrir MolView]( {molview_url} )")
