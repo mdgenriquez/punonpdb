@@ -1,6 +1,6 @@
 streamlit
 pandas
 requests
-rdkit
+rdkit-pypi==2023.9.1
 numpy
 Pillow
