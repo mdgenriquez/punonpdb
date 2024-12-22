@@ -6,7 +6,7 @@ from rdkit import Chem
 
 # Título de la aplicación
 st.title("Visualización de Moléculas en 2D")
-st.markdown("Visualiza moléculas desde el archivo `MDG202_cl2.csv` en tu repositorio de GitHub.")
+st.markdown("Visualiza moléculas desde el archivo `https://github.com/mdgenriquez/punonpdb/blob/main/MDG202_cl2.csv` en tu repositorio de GitHub.")
 
 # URL del archivo en GitHub (MDG202_cl2.csv)
 github_url = "MDG202_cl2.csv"
