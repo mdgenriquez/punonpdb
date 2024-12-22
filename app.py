@@ -1,27 +1,25 @@
 import streamlit as st
 import pandas as pd
 import io
-
-# Usar io.StringIO en lugar de pandas.compat.StringIO
-data = io.StringIO("col1,col2\n1,2\n3,4")
-df = pd.read_csv(data)
-print(df)
 import requests
 from rdkit import Chem
-#from rdkit.Chem import Draw
+from rdkit.Chem import Draw
 
 # Título de la aplicación
 st.title("Visualización de Moléculas en 2D")
 st.markdown("Visualiza moléculas desde el archivo `https://github.com/mdgenriquez/punonpdb/blob/main/MDG202_cl2.csv` en tu repositorio de GitHub.")
 
 # URL del archivo en GitHub (MDG202_cl2.csv)
-github_url = "https://github.com/mdgenriquez/punonpdb/blob/d0170a564fdafa0a1be7589fc6c922f67bf5101b/MDG202_cl2.csv"
+github_url = "https://raw.githubusercontent.com/mdgenriquez/punonpdb/d0170a564fdafa0a1be7589fc6c922f67bf5101b/MDG202_cl2.csv"
 
 # Descargar el archivo
 try:
     response = requests.get(github_url)
     response.raise_for_status()  # Verifica que no haya errores en la descarga
-    df = pd.read_csv(pd.compat.StringIO(response.text))
+    
+    # Usar io.StringIO en lugar de pandas.compat.StringIO
+    data = io.StringIO(response.text)
+    df = pd.read_csv(data)
     
     if 'SMILES' not in df.columns:
         st.error("El archivo debe contener una columna llamada 'SMILES'.")
