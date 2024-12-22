@@ -1,5 +1,1 @@
-libcairo2-dev
-libfreetype6-dev
-libpng-dev
-libopenblas-dev
-liblapack-dev
+
